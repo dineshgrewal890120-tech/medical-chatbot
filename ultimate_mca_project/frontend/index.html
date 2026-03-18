@@ -13,7 +13,7 @@
 <script>
 function send(){
 let msg=document.getElementById("msg").value;
-fetch"https://medical-chatbot-r77g.onrender.com/predict",{
+fetch("https://medical-chatbot-r77g.onrender.com/predict",{
 method:"POST",
 headers:{"Content-Type":"application/json"},
 body:JSON.stringify({symptoms:msg})
